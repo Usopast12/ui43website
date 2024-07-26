@@ -7,12 +7,13 @@
 body {
   background-color: #000000;
   color: #fff;
+  font-family: Arial, sans-serif;
 }
 
 nav {
   position: relative;
   display: flex;
-  justify-content: center; /* Center the menu */
+  justify-content: center;
   align-items: center;
   border: 1px solid #000000;
   padding: 10px;
@@ -36,7 +37,7 @@ nav {
 .menu {
   display: flex;
   list-style: none;
-  margin: 0 auto; /* Center the menu */
+  margin: 0 auto;
 }
 
 .menu li {
@@ -62,16 +63,18 @@ nav {
   text-align: center;
   font-weight: bold;
 }
+
 .bannerinfo h1 {
   font-size: 60px;
 }
+
 .bannerinfo p {
   font-size: 30px;
 }
+
 .bannerinfo img {
   align-self: center;
   width: 1500px;
-  /* border-radius: 100%; */
 }
 
 main {
@@ -107,26 +110,45 @@ footer {
 }
 
 .seconnav {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  top: 60px; /* Adjust as needed */
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s ease;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.seconnav .container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
-  height: 50px;
-  padding: 0 100px;
-  position: fixed;
-  width: 100%;
-  background-color: #000;
-  height: 100px;
-  z-index: 1000;
+  margin: 0 auto;
+  max-width: 1200px;
 }
-.seconnav div {
-  display: flex;
-  align-items: center;
+
+.seconnav .container div {
+  position: relative;
 }
+.seconnav .container p {
+  padding-right: 100px;
+}
+
 button {
+  position: absolute;
   padding: 10px;
-  margin-left: 20px;
   color: #fff;
   background-color: red;
   border: none;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sticky {
+  top: 0; /* Stick to the top */
 }
