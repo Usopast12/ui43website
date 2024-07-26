@@ -117,7 +117,7 @@ footer {
   top: 60px; /* Adjust as needed */
   left: 0;
   z-index: 1000;
-  transition: top 0.3s ease;
+  transition: top 0.1s ease;
   padding-top: 20px;
   padding-bottom: 20px;
 }
