@@ -27,31 +27,35 @@
       <p>Lorem ipsum.</p>
     </div>
   </nav>
+
+  <!-- Secondary nav section -->
   <div class="seconnav">
-    <div>
-      <h1>ROG Strix G18 (2024) G814</h1>
-    </div>
-    <div>
-      <p>ราคาจากทาง ASUS เริ่มต้นที่ $74,999.00</p>
-      <button>SELECT</button>
+    <div class="container">
+      <div>
+        <h1>ROG Strix G18 (2024) G814</h1>
+      </div>
+      <div>
+        <p>ราคาจากทาง ASUS เริ่มต้นที่ $74,999.00</p>
+        <button>SELECT</button>
+      </div>
+
     </div>
   </div>
-  <!-- nav section -->
-  <!-- banner section -->
+  <!-- Secondary nav section -->
+
+  <!-- Banner section -->
   <section class="banner">
     <div class="bannerinfo">
       <img width="100px"
         src="https://dlcdnwebimgs.asus.com/files/media/8CF497C8-1A77-404F-ABF1-85822D3BE077/v1/img-webp/kv/pd-front.webp"
         alt="">
-      <!-- <img
-        src="https://dlcdnwebimgs.asus.com/files/media/8CF497C8-1A77-404F-ABF1-85822D3BE077/v1/img-webp/kv/bg-kv.webp"
-        alt=""> -->
       <h1>ROG STRIX G18</h1>
       <p>RAISE YOUR GAME. CARRY YOUR SQUAD.</p>
     </div>
   </section>
-  <!-- banner section -->
-  <!-- content start -->
+  <!-- Banner section -->
+
+  <!-- Content start -->
   <main>
     <div>
       <img width="100"
@@ -69,7 +73,7 @@
     <div>
       <img width="100px"
         src="https://dlcdnwebimgs.asus.com/files/media/8CF497C8-1A77-404F-ABF1-85822D3BE077/v1/img/kv/gpu.svg" alt="">
-      <p>กราฟิกการ์ดสูง สุด NVIDIA® GeForce RTX™ 4070 พร้อม <br> NVIDIA Advanced Optimus และเทคโนโลยี DLSS 3</p>
+      <p>กราฟิกการ์ดสูงสุด NVIDIA® GeForce RTX™ 4070 พร้อม <br> NVIDIA Advanced Optimus และเทคโนโลยี DLSS 3</p>
     </div>
     <div>
       <img width="100px"
@@ -80,26 +84,46 @@
         16:10 aspect ratio,240Hz/3m และ 100% DCI-P3</p>
     </div>
     <div>
-      <img src="" alt="">
+      <img width="100px"
+        src="https://dlcdnwebimgs.asus.com/files/media/8CF497C8-1A77-404F-ABF1-85822D3BE077/v1/img/kv/liquid-metal.svg"
+        alt="">
       <p>
         เทคโนโลยีใหม่ 3 พัดลมแบบ Tri-Fan Technology <br>
-        บน ROG Intelligent Cooling รักษาความเย็นภายใต้ทุกแรงกดดันด้วย<br>
-        สารนำความร้อน Liquid Metal Conductonaut Extreme</p>
+        บน ROG Intelligent Cooling <br>
+        รักษาความเย็นภายใต้ทุกแรงกดดันด้วย<br>
+        สารนำความร้อน Liquid Metal <br>
+        Conductonaut Extreme</p>
     </div>
     <div>
-      <img src="" alt="">
+      <img width="100px"
+        src="https://dlcdnwebimgs.asus.com/files/media/8CF497C8-1A77-404F-ABF1-85822D3BE077/v1/img/kv/dolby-vision-atmos.svg"
+        alt="">
       <p>
         รองรับ Dolby Vision และ Dolby Atmos <br>
         เพื่อการรับชมคอนเทนท์อย่างเต็มอรรถรส</p>
     </div>
   </main>
+  <!-- Content end -->
 
-  <!-- content start -->
-  <!-- footer -->
+  <!-- Footer -->
   <footer>
     <p>Copyright 2024. Made by Usopast</p>
   </footer>
-  <!-- footer -->
+  <!-- Footer -->
+
+  <!-- Script -->
+  <script>
+    window.addEventListener('scroll', function () {
+      const seconnav = document.querySelector('.seconnav');
+      const offset = 200; // Height of the main nav
+
+      if (window.scrollY > offset) {
+        seconnav.classList.add('sticky');
+      } else {
+        seconnav.classList.remove('sticky');
+      }
+    });
+  </script>
 </body>
 
 </html>
